@@ -10,25 +10,113 @@ body {
 	margin: 0px;
 }
 
+/* Top Banner */
+
 .banner {
 	background-color: #3a5795;
 	height: 150px;
 	border-top
 }
+
 h1 {
     float: left;
     width: 200px;
+    padding-left: 200px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+    font-size: 50px;
 }
 
-#signup-container {
+#signin-container {
     float: right;
-    width: 200px;
+    width: 520px;
+    color: white;
+    padding-right: 160px;
 }
 
 #content {
-    margin: 0 200px;
-    clear:both;
+    padding-left: 200px;
+    float: left;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
+.signin-field {
+	float: left;
+	padding-top: 20px;
+	padding-right: 30px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.signin-field input {
+	border-radius: 5px;
+	height: 20px;
+}
+
+#submit-button {
+	margin-top: 55px;
+}
+
+#signin-button {
+	height: 30px;
+	width: 80px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+
+/* Main Container */
+
+#main-container {
+	margin-top: 60px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Content */
+
+	h2 {
+		font-size: 30px;
+	}
+
+	#content li {
+		padding-bottom: 20px;
+		font-size: 16px;
+	}
+
+/* Signup Container */
+
+	#signup {
+		float: right;
+		padding-right: 200px;
+		width: 400px;
+	}
+
+	.signup-field {
+		padding-bottom: 15px;
+	}
+
+	.signup-field input {
+		width: 400px;
+		height: 30px;
+		font-family: "Comic Sans MS", "Comic Sans", cursive;
+	}
+
+	#last-name-field {
+		float: right;
+	}
+
+	#first-name-field {
+		float: left;
+	}
+
+	#first-name-field input {
+		width: 175px;
+	}
+
+	#last-name-field input {
+		width: 175px;
+	}
+
+
+
 
 </style>
 
@@ -41,23 +129,65 @@ h1 {
 	    Facelook
 	</h1>
 
-	<div id="signup-container">
+	<div id="signin-container">
 	    <form>
-	    	<p>Email:</p>
-	    	<input type="text">
-	    	<p>Password:</p>
-	    	<input type="text">
-	    	<input type="submit" value="Submit">
+	    	<div class="signin-field">
+	    		<p>Email:</p>
+	    		<input type="text">
+	    	</div>
+	    	<div class="signin-field">
+	    		<p>Password:</p>
+	    		<input type="text">
+	    	</div>
+	    	<div class="signin-field" id="submit-button">
+	    	<input type="submit" value="Login" id="signin-button">
+	    	</div>
 	    </form>
 	</div>
 </div>
 
+<div id="main-container">
+
 <div id="content">
-    <h1>Ra ra banjo banjo</h1>
-    <p>Welcome to the Ra ra banjo banjo page. Ra ra banjo banjo. Ra ra banjo banjo. Ra ra banjo banjo.</p>
-    <p>(Ra ra banjo banjo)</p>
+    <h2>Connect with all your friends!</h2>
+    	<ul>
+    		<li><strong>See photos and updates</strong> in your news feed.</li>
+    		<li><strong>Post your status for the world to see</strong> from your profile.</li>
+    		<li><strong>Get in touch with you friends</strong> by "friending" them</li>
+    		<li><strong>Like things</strong>because you're a positive person!</li>
+    	</ul>
 </div>
 
+<div id="signup">
+
+	<h2>Sign Up</h2>
+	<form>
+			<div>
+	    	<div class="signup-field" id="first-name-field">
+	    		<input type="text" value="First Name">
+	    	</div>
+	    	<div class="signup-field" id="last-name-field">
+	    		<input type="text" value="Last Name">
+	    	</div>
+	    	</div>
+	    	<div class="signup-field">
+	    		<input type="text" value="Your Email">
+	    	</div>
+	    	<div class="signup-field">
+	    		<input type="text" value="Your New Password">
+	    	</div>
+	    	<div class="signup-field">
+	    		<input type="text" value="Confirm Your New Password">
+	    	</div>
+	    	<div class="signup-field" id="submit-button">
+	    	<input type="submit" value="Sign Up!">
+	    	</div>
+
+	</form>
+
+</div>
+
+</div>
 
 </body>
 </html>
